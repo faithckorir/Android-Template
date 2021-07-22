@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    layout_width=""
+    layout_height="">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_container">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/desc_wrapper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            app:layout_constraintBottom_toTopOf="@id/buttons_wrapper"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" >
+            <TextView
+                android:id="@+id/textview_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:gravity="center_horizontal"
+                android:text="Welcome to Dynamic Feature \nApp Template"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/module_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:text=""/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/buttons_wrapper"
+            android:gravity="center_horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/desc_wrapper"
+            android:orientation="vertical"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/button_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show Login" />
+            <View
+                android:layout_marginTop="20dp"
+                android:background="@android:color/darker_gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <Button
+                android:layout_marginTop="20dp"
+                android:id="@+id/button_accounts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show Accounts" />
+            <Button
+                android:layout_marginTop="20dp"
+                android:id="@+id/button_loans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show Loans" />
+            <Button
+                android:layout_marginTop="20dp"
+                android:id="@+id/button_paybills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show Paybills" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

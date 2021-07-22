@@ -1,0 +1,72 @@
+plugins {
+    id 'com.android.dynamic-feature'
+}
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion rootProject.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.ekenya.android.loansmodule"
+        minSdkVersion 24
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation project(":app")
+    api 'androidx.appcompat:appcompat:' + rootProject.supportLibVersion
+    api 'androidx.recyclerview:recyclerview:' + rootProject.recyclerViewVersion
+    api 'com.google.android.material:material:' + rootProject.materialVersion
+    api 'androidx.constraintlayout:constraintlayout:'+rootProject.constraintLayoutVersion
+    api 'androidx.lifecycle:lifecycle-livedata-ktx:'+rootProject.kotlinLifecycleExtVersion
+    api 'androidx.lifecycle:lifecycle-viewmodel-ktx:'+rootProject.kotlinLifecycleExtVersion
+    api 'androidx.navigation:navigation-fragment:'+ rootProject.navigationUIVersion
+    api 'androidx.navigation:navigation-ui:'+ rootProject.navigationUIVersion
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:' + rootProject.testVersion
+    androidTestImplementation 'androidx.test.espresso:espresso-core:'+ rootProject.espressoVersion
+    androidTestImplementation 'androidx.annotation:annotation:'+ rootProject.supportLibVersion
+
+//    //Encryption Lib
+//    debugImplementation 'com.ekenya.android.encryptionlib.debug:encryptionlib:'+rootProject.ekenyeEntryptionLibVersion
+//    releaseImplementation 'com.ekenya.android:encryptionlib:'+rootProject.ekenyeEntryptionLibVersion
+//    //Validations Lib
+//    debugImplementation 'co.ke.ekenya.lib.validationslib.debug:validationslib:'+rootProject.ekenyaValidationsLibVersion
+//    releaseImplementation 'co.ke.ekenya.lib.validationslib:validationslib:'+rootProject.ekenyaValidationsLibVersion
+//    //Networking Lib
+//    debugImplementation 'co.ke.ekenya.networkLib.networklib.debug:networklib:'+rootProject.ekenyaNetworkLibVersion
+//    releaseImplementation 'co.ke.ekenya.networkLib.networklib:networklib:'+rootProject.ekenyaNetworkLibVersion
+//    //Data Repo Lib
+//    debugImplementation 'devops.mobile.datarepolib.debug:datarepolib:'+rootProject.ekenyaDataRepoLibVersion
+//    releaseImplementation 'devops.mobile.datarepolib:datarepolib:'+rootProject.ekenyaDataRepoLibVersion
+//    //Logging Lib
+//    debugImplementation 'ekenya.rnd.logginglibraryImp.logginglib.debug:logginglib:'+rootProject.ekenyaLoggingLibVersion
+//    releaseImplementation 'ekenya.rnd.logginglibraryImp.logginglib:logginglib:'+rootProject.ekenyaLoggingLibVersion
+
+    annotationProcessor "com.google.dagger:dagger-android-processor:" + rootProject.googleDaggerVersion
+    annotationProcessor "com.google.dagger:dagger-compiler:" + rootProject.googleDaggerVersion
+
+    //Kotlin
+    kapt 'com.google.dagger:dagger-compiler:' + rootProject.googleDaggerVersion
+    kapt 'com.google.dagger:dagger-android-processor:' + rootProject.googleDaggerVersion
+
+    implementation  project(":common")
+}

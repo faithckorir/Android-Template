@@ -1,0 +1,12 @@
+dependencyResolutionManagement {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+rootProject.name = "Dynamic App Template"
+include ':app'
+include ':loans'
+include ':accounts'
+include ':paybills'
+include ':common'

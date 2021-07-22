@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Dynamic App Template</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Dynamic Apps Sample</string>
+    <string name="nav_header_subtitle">On Demand Features Template App</string>
+    <string name="nav_header_desc">A Dynamic Feature App.</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_user_profile">My Profile</string>
+    <string name="menu_loans">Loans</string>
+    <string name="menu_bills">Pay Bills</string>
+    <string name="title_loansfeature">Loans Module</string>
+    <string name="title_accounts">Accounts</string>
+    <string name="title_loans">Module Title</string>
+    <string name="title_paybills">Module Title</string>
+    <string name="title_activity_account_item_detail_host">AccountItem Detail Host Activity</string>
+    <string name="title_accountitem_list">AccountItems</string>
+    <string name="title_accountitem_detail">AccountItem Detail</string>
+    <string name="title_activity_loans">LoansActivity</string>
+    <string name="title_activity_pay_bills">MainActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+</resources>

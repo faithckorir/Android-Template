@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.loans.LoansModuleFragment">
+
+    <TextView
+        android:id="@+id/text_module_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true" />
+
+    <FrameLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_installation_views_wrapper">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:visibility="gone"
+            android:gravity="center_horizontal"
+            android:id="@+id/ll_module_not_installed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This module is not currently installed. \nClick the button bellow to install"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_install_module"
+                android:text="Install Module"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:visibility="gone"
+            android:gravity="center_horizontal"
+            android:id="@+id/ll_module_installed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginBottom="20dp"
+                android:id="@+id/btn_launch_module"
+                android:text="Launch Module"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_uninstall_module"
+                android:text="Install Module"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </FrameLayout>
+</RelativeLayout>

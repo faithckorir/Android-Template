@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Dynamic_App_Template.iml" filepath="$PROJECT_DIR$/.idea/modules/Dynamic_App_Template.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/accounts/Dynamic_App_Template.accounts.iml" filepath="$PROJECT_DIR$/.idea/modules/accounts/Dynamic_App_Template.accounts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Dynamic_App_Template.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Dynamic_App_Template.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/Dynamic_App_Template.common.iml" filepath="$PROJECT_DIR$/.idea/modules/common/Dynamic_App_Template.common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/loans/Dynamic_App_Template.loans.iml" filepath="$PROJECT_DIR$/.idea/modules/loans/Dynamic_App_Template.loans.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/paybills/Dynamic_App_Template.paybills.iml" filepath="$PROJECT_DIR$/.idea/modules/paybills/Dynamic_App_Template.paybills.iml" />
+    </modules>
+  </component>
+</project>
